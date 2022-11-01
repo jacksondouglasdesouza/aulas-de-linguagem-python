@@ -1,18 +1,11 @@
 # Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas - PUCPR
-# Terceiro Módulo — PROJETO - 01 - Python
+# Quarto Módulo — Python
 # Aluno: Jackson Douglas de Souza
 # Matéria: Raciocínio Computacional
 
+# CONTINUAÇÃO - ESTRUTURAS DE REPETIÇÃO - for | while
 
-'''
-PROJETO — 01 — carrinho de compras!
-Crie um programa que simule um carrinho de compras, solicitando o nome do produto (não pode ser vazio),
-o seu valor (valor decimal, positivo) e quantidade a ser comprada (valor inteiro, positivo). Ao incluir um produto,
-deve perguntar se o usuário deseja fechar o pedido ou incluir mais produtos. Todos os dados devem ser validados.
-Ao final da compra, deve ser informado o valor total do pedido.
-'''
-
-
+import math
 
 print("▬"*20)
 print(" 𝓑𝓔𝕸 𝓥𝓘𝓝𝓓𝓞 𝓗𝓤𝓜𝓐𝓝𝓞")
@@ -37,7 +30,7 @@ while flag:
             else:
                 break
         except ValueError:
-            print("ERROR! O valor é inválido, Não tente me enganar tente novamente!")
+            print("ERROR! O valor é inválido, tente novamente!")
     while True:
         try:
             quantidadeProduto = int(input("❱ 🅠🅤🅐🅛 🅐 🅠🅤🅐🅝🅣🅘🅓🅐🅓🅔: "))
@@ -53,4 +46,7 @@ while flag:
     if respostaUsuario == "Não":
         flag = False
 print(f"O valor total a pagar é: R${valordasCompras:.2f}")
+
+
+
 
